@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides tools for reading Excel (xlsx) files.
 
+<a href="https://glama.ai/mcp/servers/kniyyx0gej">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/kniyyx0gej/badge" alt="Excel Reader Server MCP server" />
+</a>
+
 ## Features
 
 - Read content from all sheets in an Excel file
