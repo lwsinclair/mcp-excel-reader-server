@@ -86,13 +86,16 @@ async def handle_call_tool(
     if not file_path:
         raise ValueError("file_path is required")
 
+    # Convert to absolute path for file operations
     abs_path = os.path.abspath(file_path)
-    if not os.path.exists(abs_path):
-        raise ValueError(f"Excel file not found: {file_path}")
+    # Store the full path for returning in the response
+    full_path = os.path.realpath(abs_path)
+    if not os.path.exists(full_path):
+        raise ValueError(f"Excel file not found: {full_path}")
     
     try:
         # Load the workbook
-        workbook = openpyxl.load_workbook(abs_path, data_only=True)
+        workbook = openpyxl.load_workbook(full_path, data_only=True)
         result = {}
         
         if name == "read_excel":
