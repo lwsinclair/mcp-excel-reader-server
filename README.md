@@ -96,7 +96,7 @@ The server provides clear error messages for common issues:
 
 ## License
 
-This project is released under the MIT License. See the LICENSE file for details.
+This project is released under the Apache 2 License. See the LICENSE file for details.
 
 ## Contributing
 
